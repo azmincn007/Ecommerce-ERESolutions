@@ -1,0 +1,47 @@
+.trendingbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+.left-image{
+    width: 50%;
+
+    img{
+        width: 100%;
+    }
+}
+.right-image{
+   
+    width: 50%;
+
+    img{
+        width: 50%;
+    }
+}
+
+.verticaltext {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+
+  }
+
+
+  .trendingbox {
+    position: relative;
+  }
+  
+  .view-all-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    outline: none;
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+  }
+  

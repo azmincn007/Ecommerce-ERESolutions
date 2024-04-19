@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Nav from './Components/Navbar/Nav';
+import Landing from './Components/Landing/Landing';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import Alltrending from './Components/Landing/Alltrending';
+
+const queryClient = new QueryClient();
 
 function App() {
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Landing/>}/> 
+    <Route path='/alltrending' element={<Alltrending/>}/> 
+   </Routes>
+   </BrowserRouter>
+   </QueryClientProvider>
+
   );
 }
 

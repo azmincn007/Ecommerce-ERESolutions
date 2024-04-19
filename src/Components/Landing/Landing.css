@@ -1,0 +1,9 @@
+.landing{
+    display: flex;
+    justify-content: center;
+
+    .landing-contents{
+        width: 80%;
+    
+    }
+}

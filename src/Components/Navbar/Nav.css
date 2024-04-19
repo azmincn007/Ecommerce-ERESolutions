@@ -1,0 +1,33 @@
+.navbar{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .top{
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem .8rem;
+            .logo{
+                font-size: 1.6rem;
+                font-family: "Roboto Flex", sans-serif,
+                
+                
+            }
+
+            .nav-credentials{
+                display: flex;
+                font-size: 1.2rem;
+
+                    .account{
+                        padding-right: 1.5rem;
+                    }
+            }
+    }
+}
+
+
+
+/* Buttons  */
+
+.search{
+    font-size: 1.3rem;
+}
